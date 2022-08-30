@@ -724,6 +724,73 @@ main {
   padding: 10px;
 }
 
+.main__gym {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 415px 2fr;
+  grid-template-columns: 415px 2fr;
+  gap: 22px;
+  background-color: #ffffff;
+  color: #102654;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.gym__info {
+  padding-left: 60px;
+}
+
+.gym__info h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.gym__info span {
+  display: block;
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 45px;
+}
+
+.gym__info p {
+  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.gym__view {
+  position: relative;
+}
+
+.gym__photo {
+  margin-left: 63px;
+  margin-bottom: 95px;
+}
+
+.gym__photo img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gym__video {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 364px;
+  height: 228px;
+}
+
+.gym__video iframe {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -793,6 +860,60 @@ main {
   .header__social {
     display: none;
   }
+
+  .main__gym {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .gym__info {
+    margin: 0 88px 40px;
+    padding: 0;
+  }
+
+  .gym__info h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .gym__info span {
+    margin-bottom: 30px;
+  }
+
+  .gym__info p {
+    margin: 0;
+  }
+
+  .gym__info p:last-child {
+    display: none;
+  }
+
+  .gym__photo {
+    margin-left: 0;
+    margin-bottom: 83px;
+    width: 100%;
+  }
+
+  .gym__video {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 5px;
+    width: 266px;
+    height: 167px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -833,5 +954,33 @@ main {
 
   .header__main-image {
     display: none;
+  }
+
+  .main__gym {
+    padding: 70px 0;
+    text-align: left;
+  }
+
+  .gym__info {
+    margin: 0 0 30px;
+    padding: 0 15px;
+  }
+
+  .gym__info h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .gym__photo {
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .gym__video {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 167px;
   }
 }

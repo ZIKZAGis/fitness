@@ -1,0 +1,142 @@
+.main__gym {
+  display: grid;
+  grid-template-columns: 415px 2fr;
+  gap: 22px;
+  background-color: $white;
+  color: $main-blue;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.gym__info {
+  padding-left: 60px;
+
+  h2 {
+    font-family: $ff-bebas;
+    font-size: 49px;
+    line-height: 49px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  span {
+    display: block;
+    font-family: $ff-regular;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 45px;
+  }
+
+  p {
+    font-family: $ff-ligth;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.gym__view {
+  position: relative;
+}
+
+.gym__photo {
+  margin-left: 63px;
+  margin-bottom: 95px;
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.gym__video {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 364px;
+  height: 228px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@include vp-1200 {
+  .main__gym {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .gym__info {
+    margin: 0 88px 40px;
+    padding: 0;
+
+    h2 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    span {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin: 0;
+
+      &:last-child  {
+        display: none;
+      }
+    }
+  }
+
+  .gym__photo {
+    margin-left: 0;
+    margin-bottom: 83px;
+    width: 100%;
+  }
+
+  .gym__video {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+    width: 266px;
+    height: 167px;
+  }
+}
+
+@include vp-768 {
+  .main__gym {
+    padding: 70px 0;
+    text-align: left;
+  }
+
+  .gym__info {
+    margin: 0 0 30px;
+    padding: 0 15px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .gym__photo {
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .gym__video {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 167px;
+  }
+}
