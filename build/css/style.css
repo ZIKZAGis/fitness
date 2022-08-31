@@ -777,7 +777,7 @@ main {
   background-color: #ffffff;
   color: #102654;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 141px;
 }
 
 .gym__info {
@@ -837,6 +837,83 @@ main {
 .gym__video iframe {
   width: 100%;
   height: 100%;
+}
+
+.subscript {
+  position: relative;
+  background-color: #f8f9fc;
+  color: #102654;
+  padding-top: 114px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.subscript h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+  letter-spacing: 2px;
+}
+
+.subscript__tabs {
+  outline: 1px solid #103aae;
+}
+
+.subscript__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 38px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.subscript__tab {
+  position: relative;
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgba(16, 38, 84, 0.5);
+}
+
+.subscript__tab--active {
+  cursor: default;
+  color: #102654;
+}
+
+.subscript__tab--active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ed0233;
+  top: 38px;
+  left: 0;
+}
+
+.subscript__tab:not(.subscript__tab--active):hover {
+  background-color: #ed0233;
+}
+
+.subscript__tab:not(.subscript__tab--active):focus {
+  background-color: #ed0233;
+}
+
+.subscript__pane {
+  display: none;
+}
+
+.subscript__pane--show {
+  display: block;
 }
 
 @media (max-width: 1199px) {

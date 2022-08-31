@@ -1,0 +1,72 @@
+.subscript {
+  position: relative;
+  background-color: $grey;
+  color: $main-blue;
+  padding-top: 114px;
+  padding-bottom: 120px;
+  text-align: center;
+
+  h2 {
+    font-family: $ff-bebas;
+    font-size: 49px;
+    line-height: 49px;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+    letter-spacing: 2px;
+  }
+}
+
+.subscript__tabs {
+  outline: 1px solid $blue;
+}
+
+.subscript__nav {
+  display: flex;
+  gap: 45px;
+  width: fit-content;
+  margin: 0 auto 38px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.subscript__tab {
+  position: relative;
+  font-family: $ff-regular;
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgba(16, 38, 84, 0.5);
+
+  &--active {
+    cursor: default;
+    color: $main-blue;
+  }
+
+  &--active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $coral;
+    top: 38px;
+    left: 0;
+  }
+
+  &:not(.subscript__tab--active):hover {
+    background-color: $coral;
+  }
+
+  &:not(.subscript__tab--active):focus {
+    background-color: $coral;
+  }
+}
+
+.subscript__pane {
+  display: none;
+}
+
+.subscript__pane--show {
+  display: block;
+}

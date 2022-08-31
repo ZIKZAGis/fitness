@@ -7,12 +7,9 @@
     <meta name="description" content="Фитнес Центр 'Supergym'">
     <title>Supergym</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/BebasNeue.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="fonts/BebasNeue.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/BebasNeue-Regular.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/RobotoCondensed-Boldwoff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensed-Light.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -91,9 +88,30 @@
           </div>
         </div>
       </section>
+      <section class="main__subscript subscript container">
+        <h2>Абонементы</h2>
+        <div class="subscript__tabs">
+          <div class="subscript__nav">
+            <button class="subscript__tab subscript__tab--active" type="button">1 месяц</button>
+            <button class="subscript__tab" type="button">6 месяцев</button>
+            <button class="subscript__tab" type="button">1 месяцев</button>
+          </div>
+          <div class="subscript__content">
+            <div class="subscript__pane subscript__pane--show" id="content-1">
+              Содержимое 1...
+            </div>
+            <div class="subscript__pane" id="content-2">
+              Содержимое 22...
+            </div>
+            <div class="subscript__pane" id="content-3">
+              Содержимое 333...
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-
     </footer>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
