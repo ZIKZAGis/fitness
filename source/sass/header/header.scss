@@ -27,6 +27,15 @@
     line-height: 20px;
     letter-spacing: 1.1px;
     color: $white;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: $blue;
+      opacity: 0.6;
+    }
   }
 }
 
@@ -88,6 +97,21 @@
     line-height: 14px;
     padding: 20px;
     text-transform: uppercase;
+
+    &:hover {
+      color: $blue;
+      background-color: $white;
+      border-image: $gradient;
+      border-image-slice: 1;
+    }
+
+    &:active {
+      color: $blue;
+      background-color: $white;
+      border-image: $gradient;
+      border-image-slice: 1;
+      opacity: 0.6;
+    }
   }
 }
 
@@ -114,6 +138,15 @@
     line-height: 14px;
     color: $white;
     padding: 10px;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: $blue;
+      opacity: 0.6;
+    }
   }
 }
 
