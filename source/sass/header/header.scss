@@ -1,7 +1,7 @@
 .header {
   background: conic-gradient(from 45deg at 19% 43%, $coral, $blue, $coral);
   color: $white;
-  padding-bottom: 50px;
+  padding-bottom: 51px;
 }
 
 .header__links {
@@ -25,7 +25,7 @@
     font-family: $ff-bebas;
     font-size: 26px;
     line-height: 20px;
-    letter-spacing: 0.8;
+    letter-spacing: 1.1px;
     color: $white;
   }
 }
@@ -40,23 +40,28 @@
   flex-direction: column;
   align-items: flex-end;
   margin-right: 64px;
-  margin-top: 120px;
+  margin-top: 116px;
   min-width: 396px;
 
   p {
     font-family: $ff-bebas;
     text-transform: uppercase;
     font-size: 49px;
-    margin: 0;
+    line-height: 49px;
+    letter-spacing: 1.7px;
+    margin: 0 0 6px;
   }
 
   h1 {
     font-family: $ff-bebas;
     text-transform: uppercase;
     font-size: 109px;
+    line-height: 109px;
+    letter-spacing: 4px;
     text-align: right;
-    margin: 0 0 65px;
+    margin: 0 0 63px;
     max-width: 298px;
+    -webkit-text-stroke: 3px;
   }
 
   ul {
@@ -64,8 +69,8 @@
     font-family: $ff-regular;
     font-size: 14px;
     line-height: 21px;
-    top: 210px;
-    left: 19px;
+    top: 189px;
+    right: 264px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -77,9 +82,11 @@
     color: $white;
     border: 4px solid $white;
     text-align: center;
+    letter-spacing: 0.8px;
     font-size: 12px;
+    min-width: 233px;
     line-height: 14px;
-    padding: 20px 56px;
+    padding: 20px;
     text-transform: uppercase;
   }
 }
@@ -94,7 +101,7 @@
 }
 
 .header__social-list {
-  margin: 0 -10px 45px;
+  margin: 0 -10px 31px;
   padding: 0;
   list-style: none;
   text-transform: uppercase;
@@ -112,21 +119,23 @@
 
 @include vp-1200 {
   .header {
-    padding-bottom: 80px;
+    padding-bottom: 82px;
   }
 
   .header__links {
-    padding: 40px 0 25px 0;
+    padding: 38px 0 20px 0;
   }
 
   .header__list {
     a {
       font-size: 24px;
       line-height: 24px;
+      letter-spacing: 0.7px;
 
       img {
-        height: 17px;
+        height: 18px;
         width: auto;
+        margin-top: 3px;
       }
     }
   }
@@ -140,22 +149,32 @@
   }
 
   .header__main-info {
-    margin: 45px 0 0;
+    margin: 54px 0 0;
     max-width: 324px;
     min-width: 0;
 
     p {
       font-size: 34px;
+      line-height: 34px;
+      letter-spacing: 1px;
+      margin-bottom: 1px;
     }
 
     h1 {
       font-size: 86px;
-      margin-bottom: 35px;
+      line-height: 86px;
+      margin-bottom: 45px;
+      letter-spacing: 3px;
+      -webkit-text-stroke: 2px;
     }
 
     ul {
-      left: 0;
-      top: 156px;
+      top: 132px;
+      right: 211px;
+    }
+
+    a {
+      min-width: 185px;
     }
   }
 
@@ -166,7 +185,7 @@
 
     img {
       object-fit: cover;
-      height: 100%;
+      height: 102%;
       width: auto;
     }
   }
@@ -179,10 +198,11 @@
 @include vp-768 {
   .header {
     background: conic-gradient(from 45deg at 35% 38%, $coral, $blue, $coral);
+    padding-bottom: 79px;
   }
 
   .header__links {
-    padding: 20px 0;
+    padding: 18px 0;
   }
 
   .header__list {
@@ -199,11 +219,32 @@
 
   .header__main-screen {
     display: block;
+    max-width: none;
   }
 
   .header__main-info {
     width: 100%;
     max-width: 100%;
+    margin-top: 56px;
+
+    p {
+      font-size: 28px;
+      line-height: 28px;
+      max-width: 290px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 78px;
+      line-height: 78px;
+      max-width: 290px;
+      margin-bottom: 46px;
+    }
+
+    ul {
+      top: 121px;
+      right: 177px;
+    }
 
     a {
       width: 100%;
