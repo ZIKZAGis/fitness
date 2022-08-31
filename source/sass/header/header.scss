@@ -101,14 +101,14 @@
     &:hover {
       color: $blue;
       background-color: $white;
-      border-image: $gradient;
+      border-image: $button-gradient;
       border-image-slice: 1;
     }
 
     &:active {
       color: $blue;
       background-color: $white;
-      border-image: $gradient;
+      border-image: $button-gradient;
       border-image-slice: 1;
       opacity: 0.6;
     }

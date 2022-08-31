@@ -7,7 +7,8 @@ $review-blue: #1c3374;
 $dirt-blue: #495a7d;
 $footer-blue: #030a1a;
 
-$gradient: linear-gradient(to top left, $coral, $blue);
+$gradient: linear-gradient(to top left, $blue, $coral);
+$button-gradient: linear-gradient(to left, $blue, $coral);
 
 $ff-ligth: "Roboto Condensed Light", "Arial", sans-serif;
 $ff-regular: "Roboto Condensed Regular", "Arial", sans-serif;
