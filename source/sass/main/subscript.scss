@@ -1,31 +1,31 @@
 .subscript {
-  position: relative;
   background-color: $grey;
   color: $main-blue;
   padding-top: 114px;
   padding-bottom: 120px;
   text-align: center;
-  overflow-x: hidden;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -95px;
-    right: -105px;
-    width: 321px;
-    height: 384px;
-    transform: rotate(150deg);
-    background: no-repeat url("../img/weight_plates.png") transparent;
-    background-size: contain;
-    z-index: 0;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: -105px;
+  //   width: 321px;
+  //   height: 384px;
+  //   transform: rotate(150deg) translateY(-95px);
+  //   background: no-repeat url("../img/weight_plates.png") transparent;
+  //   background-size: contain;
+  //   z-index: 0;
+  // }
 
   h2 {
+    display: block;
+    max-width: 1100px;
     font-family: $ff-bebas;
     font-size: 49px;
     line-height: 49px;
     text-transform: uppercase;
-    margin: 0 0 50px;
+    margin: 0 auto 29px;
     letter-spacing: 2px;
   }
 }
@@ -33,7 +33,6 @@
 .subscript__tabs {
   position: relative;
   z-index: 1;
-  outline: 1px solid $blue;
 }
 
 .subscript__nav {
@@ -41,7 +40,6 @@
   gap: 45px;
   width: fit-content;
   margin: 0 auto 38px;
-  padding-bottom: 6px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
@@ -53,8 +51,8 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: $main-blue;
-  padding: 0 0 2px;
+  color: rgba(16, 38, 84, 0.5);
+  padding: 10px 0;
 
   &--active {
     cursor: default;
@@ -67,16 +65,18 @@
     width: 100%;
     height: 2px;
     background-color: $coral;
-    top: 38px;
+    bottom: -2px;
     left: 0;
   }
 
   &:not(.subscript__tab--active):hover {
-    background-color: $coral;
+    color: $main-blue;
+    opacity: 0.9;
   }
 
   &:not(.subscript__tab--active):focus {
-    background-color: $coral;
+    color: $main-blue;
+    opacity: 0.9;
   }
 }
 
@@ -94,34 +94,55 @@
   }
 
   li {
+    position: relative;
     box-sizing: border-box;
     background-color: $white;
     color: $main-blue;
-    outline: 2px solid $coral;
-    padding: 68px;
+    padding: 57px 30px 68px;
+    z-index: 1;
   }
 
   h3 {
     font-family: $ff-bold;
     font-size: 26px;
     line-height: 40px;
-    margin: 0 0 20px;
+    margin: 0 0 5px;
   }
 
   span {
+    display: block;
     font-family: $ff-regular;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 80px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto 49px;
   }
 
   p {
-    position: relative;
+    width: fit-content;
     font-family: $ff-bold;
     font-size: 60px;
-    line-height: 90px;
+    line-height: 60px;
     color: $blue;
-    margin: 0;
-    padding-right: 42px;
+    margin: 0 14px 0 0;
+
+    &::before {
+      content: attr(data-price);
+      position: absolute;
+      top: calc(50% - 14px);
+      left: 50%;
+      font-family: $ff-bold;
+      font-size: 100px;
+      color: rgba(232, 232, 232, 1);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
   }
 
   a {
@@ -129,26 +150,40 @@
     font-family: $ff-bold;
     font-size: 12px;
     line-height: 14px;
+    letter-spacing: 0.6px;
     color: $main-blue;
     box-sizing: border-box;
+    width: fit-content;
     min-width: 206px;
     text-align: center;
     text-transform: uppercase;
-    padding: 27px;
+    margin: 0 auto;
+    padding: 25px 20px 23px;
     border: 2px solid $main-blue;
+
+    &:focus {
+      background: $button-gradient;
+      color: $white;
+      border: none;
+      padding: 26px 22px;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   li:hover {
     border: 7px solid $white;
     border-image: $gradient;
     border-image-slice: 1;
-    padding: 61px;
+    padding: 50px 16px 57px;
 
     a {
       background: $button-gradient;
       color: $white;
       border: none;
-      padding: 29px;
+      padding: 26px 22px;
     }
   }
 }
