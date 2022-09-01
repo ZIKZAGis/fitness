@@ -1043,6 +1043,121 @@ main {
   display: block;
 }
 
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 120px 0;
+}
+
+.promo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #ed0233;
+  padding: 87px 78px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.promo__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo__top h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  letter-spacing: 3px;
+  font-size: 90px;
+  line-height: 90px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 45px 0 0;
+}
+
+.promo__info h3 {
+  display: block;
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.promo__info span {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.promo__info p {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.promo__date {
+  margin-bottom: 15px;
+}
+
+.promo__date h3 {
+  margin: 0 0 12px;
+}
+
+.promo__date span {
+  margin-right: 5px;
+}
+
+.promo__date div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-top: 1px solid #ffffff;
+}
+
+.promo__time h3 {
+  margin: 0 0 5px;
+}
+
+.promo__time span {
+  border-top: 1px solid #ffffff;
+}
+
+.promo__bottom p {
+  display: block;
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 30px;
+}
+
+.promo__bottom a {
+  display: block;
+  font-size: 12px;
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  border: 4px solid #ffffff;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
