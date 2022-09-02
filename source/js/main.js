@@ -1,14 +1,25 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {switchTabs} from './tabs';
-import {init} from './slider';
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  slidesPerGroup: 1,
+  loop: true,
+  // loopFillGroupWithBlank: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   switchTabs();
-  init();
 
   // Modules
   // ---------------------------------

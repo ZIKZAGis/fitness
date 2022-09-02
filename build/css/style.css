@@ -1192,6 +1192,10 @@ main {
   object-fit: cover;
 }
 
+.coaches {
+  padding-bottom: 120px;
+}
+
 .coaches h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
@@ -1201,37 +1205,116 @@ main {
   margin: 0 0 60px;
 }
 
+.coaches__slider-wrapper {
+  position: relative;
+}
+
 .coaches__slider {
-  outline: 4px solid red;
-  overflow: hidden;
+  height: 292px;
+  width: 100%;
 }
 
 .coaches__slider-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: 292px;
-  background-color: orange;
-  -webkit-transition: all ease 1s;
-  -o-transition: all ease 1s;
-  transition: all ease 1s;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 
 .coaches__slider-line div {
-  outline: 2px solid blue;
-  width: 260px;
   height: 100%;
 }
 
+.coaches__slider-line div img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .coaches__slider-button {
+  position: absolute;
+  cursor: pointer;
+  top: 22px;
+  width: 50px;
+  height: 100%;
+}
+
+.coaches__slider-button::after {
+  content: "";
+  background: no-repeat center url("../img/arrow.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.coaches__slider-button--prev {
+  -webkit-transform: translateX(-70px);
+  -ms-transform: translateX(-70px);
+  transform: translateX(-70px);
+}
+
+.coaches__slider-button--next {
+  -webkit-transform: translateX(70px);
+  -ms-transform: translateX(70px);
+  transform: translateX(70px);
+}
+
+.coaches__slider-button--next::after {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.coaches__slide {
+  position: relative;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.coaches__slide h3 {
+  display: block;
+  position: absolute;
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  z-index: 2;
+}
+
+.coaches__slide .coaches__info {
+  display: none;
+  position: absolute;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   padding: 20px;
-  outline: 2px solid green;
+  background-color: rgba(16, 38, 84, 0.89);
+  overflow: scroll;
+  scrollbar-width: 0;
+  z-index: 1;
+  scrollbar-width: none;
+}
+
+.coaches__slide .coaches__info::-webkit-scrollbar {
+  display: none;
+}
+
+.coaches__slide:hover .coaches__info,
+.coaches__slide:focus .coaches__info {
+  display: block;
 }
 
 @media (max-width: 1199px) {
