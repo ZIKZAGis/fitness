@@ -1,0 +1,36 @@
+.coaches {
+  h2 {
+    font-family: $ff-bebas;
+    font-size: 49px;
+    color: $main-blue;
+    letter-spacing: 1px;
+    line-height: 49px;
+    margin: 0 0 60px;
+  }
+}
+
+.coaches__slider {
+  outline: 4px solid red;
+  overflow: hidden;
+}
+
+.coaches__slider-line {
+  display: flex;
+  gap: 40px;
+  flex-wrap: nowrap;
+  width: max-content;
+  height: 292px;
+  background-color: orange;
+  transition: all ease 1s;
+
+  div {
+    outline: 2px solid blue;
+    width: 260px;
+    height: 100%;
+  }
+}
+
+.coaches__slider-button {
+  padding: 20px;
+  outline: 2px solid green;
+}

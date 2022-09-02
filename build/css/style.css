@@ -1192,6 +1192,48 @@ main {
   object-fit: cover;
 }
 
+.coaches h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  color: #102654;
+  letter-spacing: 1px;
+  line-height: 49px;
+  margin: 0 0 60px;
+}
+
+.coaches__slider {
+  outline: 4px solid red;
+  overflow: hidden;
+}
+
+.coaches__slider-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 292px;
+  background-color: orange;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.coaches__slider-line div {
+  outline: 2px solid blue;
+  width: 260px;
+  height: 100%;
+}
+
+.coaches__slider-button {
+  padding: 20px;
+  outline: 2px solid green;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
