@@ -2016,6 +2016,156 @@ main {
   top: 25px;
 }
 
+.advantages {
+  background-color: #f8f9fc;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #102654;
+}
+
+.advantages h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 3px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 550px;
+  margin: 0 auto 80px;
+}
+
+.advantages__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 60px 240px 60px 1fr;
+  grid-template-columns: 1fr 240px 1fr;
+  -ms-grid-rows: 1fr 0 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "a b c" "d b e";
+  gap: 0 60px;
+  padding-left: 164px;
+  padding-right: 164px;
+}
+
+.advantages__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages__block div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.advantages__block div:first-child span:first-child {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 71px;
+  line-height: 55px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#103aae), to(#ed0233));
+  background-image: -o-linear-gradient(bottom right, #103aae, #ed0233);
+  background-image: linear-gradient(to top left, #103aae, #ed0233);
+  margin: 0 30px 5px 0;
+}
+
+.advantages__block div:first-child span:last-child {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2e35ac;
+}
+
+.advantages__block h3 {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  margin: 0;
+}
+
+.advantages__block p {
+  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.advantages__block--top-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  padding-left: 19px;
+}
+
+.advantages__block--top-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: c;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  padding-right: 5px;
+}
+
+.advantages__block--bottom-left {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: d;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  padding-left: 19px;
+}
+
+.advantages__block--bottom-right {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: e;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  padding-right: 5px;
+}
+
+.advantages__center {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  padding: 65px 34px;
+  grid-area: b;
+  color: #ffffff;
+  background-color: #1c3374;
+  text-align: center;
+}
+
+.advantages__center span {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 74px;
+  line-height: 74px;
+}
+
+.advantages__center h3 {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.advantages__center p {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -2262,6 +2412,10 @@ main {
     margin-bottom: 5px;
   }
 
+  .coaches h2 {
+    text-align: center;
+  }
+
   .coaches__slider-wrapper {
     padding: 0 55px;
   }
@@ -2279,6 +2433,83 @@ main {
 
   .coaches__slider-button--next {
     right: -15px;
+  }
+
+  .advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .advantages__wrapper {
+    -ms-grid-columns: 1fr 50px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 70px 50px 239px 50px 70px;
+    grid-template-rows: 70px 239px 70px;
+    grid-template-areas: "a c" "b b" "d e";
+    gap: 50px;
+  }
+
+  .advantages__block {
+    padding: 0;
+  }
+
+  .advantages__block--top-left {
+    border: none;
+  }
+
+  .advantages__block--top-right {
+    border: none;
+  }
+
+  .advantages__block div:first-child span:first-child {
+    font-size: 58px;
+    margin: 0 25px 0 0;
+  }
+
+  .advantages__block h3 {
+    font-size: 20px;
+  }
+
+  .advantages__center {
+    width: calc(100% - 124px);
+    min-height: 239px;
+    margin: 0 auto;
+    padding: 45px 182px;
+  }
+
+  .advantages__center span {
+    line-height: 50px;
+  }
+
+  .advantages__center p {
+    margin: 0;
+  }
+
+  .advantages__block--top-left {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .advantages__block--top-right {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .advantages__block--bottom-left {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .advantages__block--bottom-right {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+
+  .advantages__center {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
   }
 }
 
@@ -2493,5 +2724,46 @@ main {
 
   .coaches__slider-button--next {
     right: 0;
+  }
+
+  .advantages {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .advantages__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .advantages__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 50px 45px;
+  }
+
+  .advantages__block div:first-child span:first-child {
+    margin: 0;
+  }
+
+  .advantages__center {
+    width: 100%;
+    padding: 50px 74px;
   }
 }

@@ -155,6 +155,12 @@
 }
 
 @include vp-1200 {
+  .coaches {
+    h2 {
+      text-align: center;
+    }
+  }
+
   .coaches__slider-wrapper {
     padding: 0 55px;
   }
