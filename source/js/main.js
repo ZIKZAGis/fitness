@@ -1,31 +1,12 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {switchTabs} from './tabs';
-
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 4,
-  spaceBetween: 40,
-  slidesPerGroup: 1,
-  loop: true,
-  // loopFillGroupWithBlank: true,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-// ---------------------------------
+import './slider';
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   switchTabs();
 
-  // Modules
-  // ---------------------------------
-
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
   });

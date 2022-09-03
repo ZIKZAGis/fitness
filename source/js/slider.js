@@ -1,36 +1,56 @@
-// const slides = document.querySelectorAll('.coaches__slider-line > div');
-// const sliderLine = document.querySelector('.coaches__slider-line');
-// const slider = document.querySelector('.coaches__slider');
+import Swiper from '../../node_modules/swiper/swiper-bundle';
 
-// let count = 0;
-// const width = document.querySelector('.coaches__slider-line > div').offsetWidth;
+const init = () => {
+  if (window.innerWidth >= 1200) {
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
 
-// const init = () => {
-//   slides.forEach((slide) => {
-//     slide.style.width = (slider.offsetWidth - 120) / 4 + 'px';
-//   });
-// };
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  } else if (window.innerWidth <= 1199 && window.innerWidth >= 768) {
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
 
-// window.addEventListener('resize', init);
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  } else {
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
 
-// document.querySelector('.coaches__slider-button--prev').addEventListener('click', () => {
-//   count--;
-//   if (count < 0) {
-//     count = slides.length - 4;
-//   }
-//   rollSlider();
-// });
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
+};
 
-// document.querySelector('.coaches__slider-button--next').addEventListener('click', () => {
-//   count++;
-//   if (count >= (slides.length - 3)) {
-//     count = 0;
-//   }
-//   rollSlider();
-// });
+const initSlider = () => {
+  window.addEventListener('resize', () => {
+    init();
+  });
 
-// function rollSlider() {
-//   sliderLine.style.transform = 'translate(-' + count * (width + 40) + 'px)';
-// }
+  window.addEventListener('load', () => {
+    init();
+  });
+};
 
-// export {init};
+initSlider();
