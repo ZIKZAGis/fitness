@@ -2166,6 +2166,148 @@ main {
   margin: 0;
 }
 
+.discounts {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.discounts h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 3px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 550px;
+  margin: 0 auto 80px;
+}
+
+.discounts h3 {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+}
+
+.discounts p {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  margin: 0 0 auto;
+}
+
+.discounts a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  padding: 2px 0;
+}
+
+.discounts__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 36px;
+  color: #102654;
+}
+
+.discount__unlimited {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: -2;
+  grid-row-end: -1;
+  color: #ffffff;
+}
+
+.discount__unlimited-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #ed0233;
+  padding: 45px;
+}
+
+.discount__unlimited-info span {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 70px;
+  line-height: 70px;
+}
+
+.discount__unlimited-info h3 {
+  font-size: 28px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.discount__unlimited-info p {
+  font-size: 18px;
+}
+
+.discount__unlimited-info a {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.discount__unlimited-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.discount__unlimited-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.5) translate(25px, -45px);
+  -ms-transform: scale(1.5) translate(25px, -45px);
+  transform: scale(1.5) translate(25px, -45px);
+}
+
+.discount__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 30px;
+  border: 7px solid transparent;
+  -o-border-image: -o-linear-gradient(bottom right, #103aae, #ed0233);
+  border-image: -webkit-gradient(linear, right bottom, left top, from(#103aae), to(#ed0233));
+  border-image: linear-gradient(to top left, #103aae, #ed0233);
+  border-image-slice: 1;
+}
+
+.discount__block h3 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.discount__block p {
+  font-size: 16px;
+}
+
+.discount__block a {
+  font-size: 12px;
+  color: #102654;
+  border-color: #102654;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -2511,6 +2653,44 @@ main {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
   }
+
+  .discounts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .discounts__wrapper {
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .discount__unlimited {
+    -ms-grid-columns: 2fr 3fr;
+    grid-template-columns: 2fr 3fr;
+    min-height: 462px;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: -2;
+    grid-column-end: -1;
+  }
+
+  .discount__unlimited-image {
+    max-height: 462px;
+  }
+
+  .discount__unlimited-image img {
+    -webkit-transform: scale(1.2) translate(34px, -39px);
+    -ms-transform: scale(1.2) translate(34px, -39px);
+    transform: scale(1.2) translate(34px, -39px);
+  }
+
+  .discount__block {
+    min-height: 210px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2765,5 +2945,49 @@ main {
   .advantages__center {
     width: 100%;
     padding: 50px 74px;
+  }
+
+  .discounts {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .discounts a {
+    margin: 0 auto;
+  }
+
+  .discounts__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .discount__unlimited {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .discount__unlimited-info {
+    min-height: 299px;
+  }
+
+  .discount__unlimited-image {
+    height: 299px;
+  }
+
+  .discount__unlimited-image img {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 }
