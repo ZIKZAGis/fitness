@@ -1,0 +1,18 @@
+.bottom {
+  position: relative;
+  background: linear-gradient(to right, $main-blue 50%, $white 50%);;
+}
+
+.bottom__wrapper {
+  display: flex;
+}
+
+@include vp-1200 {
+  .bottom {
+    background: none;
+  }
+
+  .bottom__wrapper {
+    flex-direction: column;
+  }
+}
