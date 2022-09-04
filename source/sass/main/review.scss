@@ -1,0 +1,143 @@
+.reviews {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  h2 {
+    font-family: $ff-bebas;
+    font-size: 49px;
+    color: $main-blue;
+    letter-spacing: 1px;
+    line-height: 49px;
+    margin: 0 0 60px;
+    text-align: center;
+  }
+}
+
+.reviews__wrapper {
+  position: relative;
+  width: 560px;
+  margin: 0 auto;
+}
+
+.reviews__slider {
+  width: 100%;
+  background-color: $review-blue;
+}
+
+.reviews__slide {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 28px;
+  color: $white;
+  padding: 62px;
+}
+
+.reviews__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.reviews__info {
+  h3 {
+    font-family: $ff-bold;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 20px;
+  }
+
+  p {
+    font-family: $ff-regular;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+}
+
+.reviews__slider-button {
+  position: absolute;
+  cursor: pointer;
+  top: 22px;
+  width: 30px;
+  height: 100%;
+
+  &::after {
+    content: "";
+    background: no-repeat center url('../img/arrow.svg');
+    width: 100%;
+    height: 100%;
+  }
+
+  &--prev {
+    background-position: left;
+    left: -50px;
+  }
+
+  &--next {
+    background-position: right;
+    right: -50px;
+
+    &::after {
+      transform: scale(-1, 1);
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@include vp-1200 {
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .reviews__wrapper {
+    width: calc(83% + 3px);
+  }
+}
+
+@include vp-768 {
+  .reviews {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .reviews__wrapper {
+    width: calc(80% + 3px);
+  }
+
+  .reviews__slide {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .reviews__info {
+    h3 {
+      position: absolute;
+      width: min-content;
+      max-width: 40%;
+      top: 55px;
+      left: 124px;
+      text-align: left;
+    }
+  }
+
+  .reviews__slider-button {
+    &--prev {
+      left: -35px;
+    }
+
+    &--next {
+      right: -35px;
+    }
+  }
+}

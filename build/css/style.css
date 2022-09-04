@@ -1884,8 +1884,6 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 
 .coaches__slider-line div {
@@ -2308,6 +2306,102 @@ main {
   border-color: #102654;
 }
 
+.reviews {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.reviews h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  color: #102654;
+  letter-spacing: 1px;
+  line-height: 49px;
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.reviews__wrapper {
+  position: relative;
+  width: 560px;
+  margin: 0 auto;
+}
+
+.reviews__slider {
+  width: 100%;
+  background-color: #1c3374;
+}
+
+.reviews__slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+  grid-template-columns: 80px 1fr;
+  gap: 28px;
+  color: #ffffff;
+  padding: 62px;
+}
+
+.reviews__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.reviews__info h3 {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0 0 20px;
+}
+
+.reviews__info p {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.reviews__slider-button {
+  position: absolute;
+  cursor: pointer;
+  top: 22px;
+  width: 30px;
+  height: 100%;
+}
+
+.reviews__slider-button::after {
+  content: "";
+  background: no-repeat center url("../img/arrow.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__slider-button--prev {
+  background-position: left;
+  left: -50px;
+}
+
+.reviews__slider-button--next {
+  background-position: right;
+  right: -50px;
+}
+
+.reviews__slider-button--next::after {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.reviews__slider-button:hover {
+  opacity: 0.6;
+}
+
+.reviews__slider-button:active {
+  opacity: 0.3;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -2691,6 +2785,15 @@ main {
   .discount__block {
     min-height: 210px;
   }
+
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .reviews__wrapper {
+    width: calc(83% + 3px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -2989,5 +3092,45 @@ main {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+  }
+
+  .reviews {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .reviews__wrapper {
+    width: calc(80% + 3px);
+  }
+
+  .reviews__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .reviews__info h3 {
+    position: absolute;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    max-width: 40%;
+    top: 55px;
+    left: 124px;
+    text-align: left;
+  }
+
+  .reviews__slider-button--prev {
+    left: -35px;
+  }
+
+  .reviews__slider-button--next {
+    right: -35px;
   }
 }
