@@ -6,7 +6,7 @@
 
 .promo__text {
   display: flex;
-  max-width: 50%;
+  max-width: 500px;
   flex-direction: column;
   color: $white;
   background-color: $coral;
@@ -135,7 +135,12 @@
     padding: 99px 0;
   }
 
+  .promo__image {
+    max-height: 292px;
+  }
+
   .promo__text {
+    max-width: 292px;
     padding: 45px;
 
     h2 {

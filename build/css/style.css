@@ -1718,7 +1718,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 50%;
+  max-width: 500px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -2840,7 +2840,12 @@ main {
     padding: 99px 0;
   }
 
+  .promo__image {
+    max-height: 292px;
+  }
+
   .promo__text {
+    max-width: 292px;
     padding: 45px;
   }
 
