@@ -2645,6 +2645,10 @@ main {
   display: flex;
 }
 
+.footer__navigation li:first-child {
+  display: none;
+}
+
 .footer__navigation a {
   display: block;
   font-family: "Roboto Condensed Regular", "Arial", sans-serif;
@@ -3506,7 +3510,6 @@ main {
   }
 
   .footer__wrapper {
-    position: relative;
     padding-top: 39px;
     padding-bottom: 39px;
     -webkit-box-orient: vertical;
@@ -3518,9 +3521,7 @@ main {
   }
 
   .footer__logo {
-    position: absolute;
-    top: 39px;
-    left: 15px;
+    display: none;
   }
 
   .footer__navigation {
@@ -3538,6 +3539,11 @@ main {
   }
 
   .footer__navigation li:first-child {
-    margin-top: 38px;
+    display: block;
+  }
+
+  .footer__navigation li:first-child img {
+    width: 68px;
+    height: 15px;
   }
 }

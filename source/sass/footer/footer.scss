@@ -32,6 +32,10 @@
 .footer__navigation {
   display: flex;
 
+  li:first-child {
+    display: none;
+  }
+
   a {
     display: block;
     font-family: $ff-regular;
@@ -70,7 +74,6 @@
 
 @include vp-768 {
   .footer__wrapper {
-    position: relative;
     padding-top: 39px;
     padding-bottom: 39px;
     flex-direction: column;
@@ -79,9 +82,7 @@
   }
 
   .footer__logo {
-    position: absolute;
-    top: 39px;
-    left: 15px;
+    display: none;
   }
 
   .footer__navigation {
@@ -94,7 +95,12 @@
     }
 
     li:first-child {
-      margin-top: 38px;
+      display: block;
+
+      img {
+        width: 68px;
+        height: 15px;
+      }
     }
   }
 }
