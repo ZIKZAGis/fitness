@@ -1,4 +1,80 @@
 .registration {
   color: $white;
   padding: 70px 170px 70px 0;
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 29px;
+  }
+
+  input {
+    width: 100%;
+    font-family: $ff-regular;
+    font-size: 14px;
+    line-height: 16px;
+    color: $white;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #74819c;
+
+    &::placeholder {
+      font-family: $ff-regular;
+      font-size: 14px;
+      line-height: 16px;
+      color: $white;
+    }
+  }
+
+  button {
+    width: 100%;
+    font-family: $ff-bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 18px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    border: 3px solid $white;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      border-image: $gradient;
+      border-image-slice: 1;
+      color: $main-blue;
+    }
+
+    &:active {
+      background-color: $white;
+      border-image: $gradient;
+      border-image-slice: 1;
+      color: $main-blue;
+      opacity: 0.6;
+    }
+  }
+}
+
+@include vp-1200 {
+  .registration {
+    background-color: $main-blue;
+    padding: 70px 163px 70px 133px;
+  }
+}
+
+@include vp-768 {
+  .registration {
+    padding: 70px 15px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

@@ -67,7 +67,7 @@
 
   &::after {
     content: "";
-    background: no-repeat center url('../img/arrow.svg');
+    background: no-repeat center url("../img/arrow.svg");
     width: 100%;
     height: 100%;
   }

@@ -2180,6 +2180,7 @@ main {
   width: fit-content;
   max-width: 550px;
   margin: 0 auto 80px;
+  color: #102654;
 }
 
 .discounts h3 {
@@ -2419,10 +2420,29 @@ main {
   background: linear-gradient(to right, #102654 50%, #ffffff 50%);
 }
 
+.bottom h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 3px;
+  margin: 0 0 57px;
+}
+
+.bottom::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  height: 1px;
+  background-color: #74819c;
+}
+
 .bottom__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .registration {
@@ -2430,9 +2450,156 @@ main {
   padding: 70px 170px 70px 0;
 }
 
+.registration div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 29px;
+}
+
+.registration input {
+  width: 100%;
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #74819c;
+}
+
+.registration input::-webkit-input-placeholder {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.registration input::-moz-placeholder {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.registration input:-ms-input-placeholder {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.registration input::-ms-input-placeholder {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.registration input::placeholder {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.registration button {
+  width: 100%;
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.registration button:hover,
+.registration button:focus {
+  background-color: #ffffff;
+  -o-border-image: -o-linear-gradient(bottom right, #103aae, #ed0233);
+  border-image: -webkit-gradient(linear, right bottom, left top, from(#103aae), to(#ed0233));
+  border-image: linear-gradient(to top left, #103aae, #ed0233);
+  border-image-slice: 1;
+  color: #102654;
+}
+
+.registration button:active {
+  background-color: #ffffff;
+  -o-border-image: -o-linear-gradient(bottom right, #103aae, #ed0233);
+  border-image: -webkit-gradient(linear, right bottom, left top, from(#103aae), to(#ed0233));
+  border-image: linear-gradient(to top left, #103aae, #ed0233);
+  border-image-slice: 1;
+  color: #102654;
+  opacity: 0.6;
+}
+
 .contacts {
   color: #102654;
   padding: 70px 0 70px 120px;
+}
+
+.contacts div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts ul:first-child {
+  margin-right: 60px;
+}
+
+.contacts ul:last-child {
+  border-left: 1px solid #74819c;
+  padding-left: 59px;
+}
+
+.contacts li:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.contacts h3 {
+  font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 10px;
+}
+
+.contacts address,
+.contacts p,
+.contacts a {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  font-style: normal;
+}
+
+.contacts a {
+  color: #102654;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  opacity: 0.6;
+}
+
+.contacts a:active {
+  opacity: 0.3;
 }
 
 @media (max-width: 1199px) {
@@ -2832,11 +2999,36 @@ main {
     background: none;
   }
 
+  .bottom::before {
+    display: none;
+  }
+
   .bottom__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding: 0;
+  }
+
+  .registration {
+    background-color: #102654;
+    padding: 70px 163px 70px 133px;
+  }
+
+  .contacts {
+    padding: 70px 179px 70px 133px;
+  }
+
+  .contacts ul {
+    width: 50%;
+  }
+
+  .contacts ul:first-child {
+    margin-right: 0;
   }
 }
 
@@ -3185,5 +3377,55 @@ main {
 
   .reviews__slider-button--next {
     right: -35px;
+  }
+
+  .bottom__wrapper {
+    padding: 0;
+  }
+
+  .registration {
+    padding: 70px 15px;
+  }
+
+  .registration div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts {
+    padding: 70px 15px;
+  }
+
+  .contacts div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts li:not(:last-child) {
+    margin-bottom: 30;
+  }
+
+  .contacts ul:last-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .contacts li {
+    margin-bottom: 30px;
+  }
+
+  .contacts ul {
+    width: 100%;
   }
 }

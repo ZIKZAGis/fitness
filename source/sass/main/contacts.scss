@@ -1,4 +1,100 @@
 .contacts {
   color: $main-blue;
   padding: 70px 0 70px 120px;
+
+  div {
+    display: flex;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &:first-child {
+      margin-right: 60px;
+    }
+
+    &:last-child {
+      border-left: 1px solid #74819c;
+      padding-left: 59px;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-family: $ff-bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 10px;
+  }
+
+  address,
+  p,
+  a {
+    font-family: $ff-regular;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    font-style: normal;
+  }
+
+  a {
+    color: $main-blue;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@include vp-1200 {
+  .contacts {
+    padding: 70px 179px 70px 133px;
+
+    ul {
+      width: 50%;
+
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include vp-768 {
+  .contacts {
+    padding: 70px 15px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 30;
+    }
+
+    ul:last-child {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    li {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      width: 100%;
+    }
+  }
 }
