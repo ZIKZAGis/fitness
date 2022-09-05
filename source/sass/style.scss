@@ -1,12 +1,21 @@
-@import '../../node_modules/swiper/swiper-bundle.min';
+@import "../../node_modules/swiper/swiper-bundle.min";
 @import "vendor/normalize";
 @import "variables";
 @import "mixins";
+
+// global
+
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+
+// header
+
 @import "header/header";
+
+// main
+
 @import "main/gym";
 @import "main/subscript";
 @import "main/promo";
@@ -17,3 +26,7 @@
 @import "main/bottom";
 @import "main/registration";
 @import "main/contacts";
+
+// footer
+
+@import "footer/footer";

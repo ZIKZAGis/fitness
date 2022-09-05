@@ -2602,6 +2602,68 @@ main {
   opacity: 0.3;
 }
 
+.footer {
+  background-color: #030a1a;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 39px;
+  padding-bottom: 39px;
+}
+
+.footer__wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__wrapper a {
+  color: #ffffff;
+}
+
+.footer__wrapper a:hover,
+.footer__wrapper a:focus {
+  opacity: 0.6;
+}
+
+.footer__wrapper a:active {
+  opacity: 0.3;
+}
+
+.footer__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__navigation a {
+  display: block;
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 18px 20px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social a {
+  display: block;
+  padding: 5px;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -3030,6 +3092,20 @@ main {
   .contacts ul:first-child {
     margin-right: 0;
   }
+
+  .footer__wrapper {
+    padding-top: 39px;
+    padding-bottom: 39px;
+  }
+
+  .footer__logo {
+    width: 82px;
+    height: 18px;
+  }
+
+  .footer__navigation a {
+    padding: 14px 15px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3427,5 +3503,41 @@ main {
 
   .contacts ul {
     width: 100%;
+  }
+
+  .footer__wrapper {
+    position: relative;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: left;
+    display: block;
+  }
+
+  .footer__logo {
+    position: absolute;
+    top: 39px;
+    left: 15px;
+  }
+
+  .footer__navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 110px;
+  }
+
+  .footer__navigation a {
+    padding: 0 15px 20px 0;
+  }
+
+  .footer__navigation li:first-child {
+    margin-top: 38px;
   }
 }
