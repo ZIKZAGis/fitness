@@ -1,18 +1,18 @@
 .advantages {
   background-color: $grey;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 115px;
+  padding-bottom: 116px;
   color: $main-blue;
 
   h2 {
     font-family: $ff-bebas;
     font-size: 49px;
     line-height: 49px;
-    letter-spacing: 3px;
+    letter-spacing: 1.7px;
     text-align: center;
     width: fit-content;
     max-width: 550px;
-    margin: 0 auto 80px;
+    margin: 0 auto 73px;
   }
 }
 
@@ -42,7 +42,7 @@
       color: transparent;
       background-clip: text;
       background-image: $gradient;
-      margin: 0 30px 5px 0;
+      margin: 0 30px 1px 0;
     }
 
     span:last-child {
@@ -56,8 +56,8 @@
   h3 {
     font-family: $ff-bold;
     font-size: 22px;
-    line-height: 33px;
-    margin: 0;
+    line-height: 20px;
+    margin: 0 0 12px;
   }
 
   p {
@@ -70,7 +70,7 @@
   &--top-left {
     grid-area: a;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
-    padding-left: 19px;
+    padding-left: 25px;
   }
 
   &--top-right {
@@ -93,23 +93,25 @@
 }
 
 .advantages__center {
-  padding: 65px 34px;
+  padding: 54px 34px 62px;
   grid-area: b;
   color: $white;
   background-color: $review-blue;
   text-align: center;
 
   span {
+    display: block;
     font-family: $ff-bold;
     font-size: 74px;
     line-height: 74px;
+    margin-bottom: 8px;
   }
 
   h3 {
     font-family: $ff-bold;
     font-size: 26px;
     line-height: 26px;
-    margin: 0;
+    margin: 0 0 39px;
   }
 
   p {

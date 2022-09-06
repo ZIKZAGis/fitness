@@ -1711,7 +1711,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 120px 0;
+  padding: 120px 0 114px;
 }
 
 .promo__text {
@@ -1812,7 +1812,7 @@ main {
   font-family: "Roboto Condensed Regular", "Arial", sans-serif;
   font-size: 18px;
   line-height: 27px;
-  margin: 0 0 46px;
+  margin: 0 0 45px;
 }
 
 .promo__bottom a {
@@ -1863,9 +1863,9 @@ main {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   color: #102654;
-  letter-spacing: 1px;
+  letter-spacing: 2.2px;
   line-height: 49px;
-  margin: 0 0 60px;
+  margin: 0 0 55px;
 }
 
 .coaches__slider-wrapper {
@@ -1951,7 +1951,7 @@ main {
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
-  bottom: 5px;
+  bottom: 6px;
   width: 100%;
   text-align: center;
   padding: 15px;
@@ -1967,7 +1967,7 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 65px 20px 55px;
+  padding: 75px 20px 55px;
   background-color: rgba(16, 38, 84, 0.89);
   z-index: 1;
 }
@@ -1978,14 +1978,14 @@ main {
   font-family: "Roboto Condensed Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  margin: 0 0 20px;
+  margin: 0 0 33px;
 }
 
 .coaches__slide .coaches__info ul {
   height: 120px;
   width: 100%;
   margin: 0;
-  padding: 0 10px 0 30px;
+  padding: 0 10px 0 50px;
   overflow-y: auto;
   scrollbar-width: none;
 }
@@ -2001,7 +2001,7 @@ main {
 }
 
 .coaches__slide .coaches__info ul li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .coaches__slide:hover .coaches__info,
@@ -2011,13 +2011,13 @@ main {
 
 .coaches__slide:hover h3,
 .coaches__slide:focus h3 {
-  top: 25px;
+  top: 38px;
 }
 
 .advantages {
   background-color: #f8f9fc;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 115px;
+  padding-bottom: 116px;
   color: #102654;
 }
 
@@ -2025,13 +2025,13 @@ main {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 3px;
+  letter-spacing: 1.7px;
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 550px;
-  margin: 0 auto 80px;
+  margin: 0 auto 73px;
 }
 
 .advantages__wrapper {
@@ -2073,7 +2073,7 @@ main {
   background-image: -webkit-gradient(linear, right bottom, left top, from(#103aae), to(#ed0233));
   background-image: -o-linear-gradient(bottom right, #103aae, #ed0233);
   background-image: linear-gradient(to top left, #103aae, #ed0233);
-  margin: 0 30px 5px 0;
+  margin: 0 30px 1px 0;
 }
 
 .advantages__block div:first-child span:last-child {
@@ -2086,8 +2086,8 @@ main {
 .advantages__block h3 {
   font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
   font-size: 22px;
-  line-height: 33px;
-  margin: 0;
+  line-height: 20px;
+  margin: 0 0 12px;
 }
 
 .advantages__block p {
@@ -2102,7 +2102,7 @@ main {
   -ms-grid-column: 1;
   grid-area: a;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
-  padding-left: 19px;
+  padding-left: 25px;
 }
 
 .advantages__block--top-right {
@@ -2137,7 +2137,7 @@ main {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 3;
-  padding: 65px 34px;
+  padding: 54px 34px 62px;
   grid-area: b;
   color: #ffffff;
   background-color: #1c3374;
@@ -2145,16 +2145,18 @@ main {
 }
 
 .advantages__center span {
+  display: block;
   font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
   font-size: 74px;
   line-height: 74px;
+  margin-bottom: 8px;
 }
 
 .advantages__center h3 {
   font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
   font-size: 26px;
   line-height: 26px;
-  margin: 0;
+  margin: 0 0 39px;
 }
 
 .advantages__center p {
@@ -2165,7 +2167,7 @@ main {
 }
 
 .discounts {
-  padding-top: 120px;
+  padding-top: 115px;
   padding-bottom: 120px;
 }
 
@@ -2173,13 +2175,13 @@ main {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 3px;
+  letter-spacing: 1.7px;
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 550px;
-  margin: 0 auto 80px;
+  margin: 0 auto 55px;
   color: #102654;
 }
 
@@ -2200,6 +2202,7 @@ main {
   text-transform: uppercase;
   border-bottom: 1px solid;
   padding: 2px 0;
+  letter-spacing: 0.5px;
 }
 
 .discounts__wrapper {
@@ -2209,7 +2212,7 @@ main {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 36px;
+  gap: 40px 38px;
   color: #102654;
 }
 
@@ -2243,19 +2246,23 @@ main {
   font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
   font-size: 70px;
   line-height: 70px;
+  margin-bottom: 20px;
 }
 
 .discount__unlimited-info h3 {
   font-size: 28px;
-  line-height: 28px;
-  margin: 0;
+  line-height: 23px;
+  margin: 0 0 4px;
 }
 
 .discount__unlimited-info p {
   font-size: 18px;
+  line-height: 24px;
 }
 
 .discount__unlimited-info a {
+  font-size: 14px;
+  line-height: 13px;
   color: #ffffff;
   border-color: #ffffff;
 }
@@ -2271,9 +2278,6 @@ main {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  -webkit-transform: scale(1.5) translate(25px, -45px);
-  -ms-transform: scale(1.5) translate(25px, -45px);
-  transform: scale(1.5) translate(25px, -45px);
 }
 
 .discount__block {
@@ -2284,7 +2288,8 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 30px;
+  min-height: 211px;
+  padding: 23px 30px 27px;
   border: 7px solid transparent;
   -o-border-image: -o-linear-gradient(bottom right, #103aae, #ed0233);
   border-image: -webkit-gradient(linear, right bottom, left top, from(#103aae), to(#ed0233));
@@ -2294,7 +2299,7 @@ main {
 
 .discount__block h3 {
   font-size: 26px;
-  margin: 0;
+  margin: 0 0 9px;
 }
 
 .discount__block p {
@@ -2308,7 +2313,6 @@ main {
 }
 
 .reviews {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -2316,8 +2320,8 @@ main {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   color: #102654;
-  letter-spacing: 1px;
-  line-height: 49px;
+  letter-spacing: 1.5px;
+  line-height: 39px;
   margin: 0 0 60px;
   text-align: center;
 }
@@ -2336,8 +2340,8 @@ main {
 .reviews__slider h3 {
   font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
   font-size: 20px;
-  line-height: 20px;
-  margin: 0 0 20px;
+  line-height: 15px;
+  margin: 0 0 15px;
 }
 
 .reviews__slider p {
@@ -2356,11 +2360,11 @@ main {
   display: grid;
   -ms-grid-columns: 80px auto;
   grid-template-columns: 80px auto;
-  -ms-grid-rows: 40px auto;
-  grid-template-rows: 40px auto;
+  -ms-grid-rows: 35px auto;
+  grid-template-rows: 35px auto;
   gap: 0 28px;
   color: #ffffff;
-  padding: 62px;
+  padding: 62px 62px 57px;
 }
 
 .reviews__avatar {
@@ -2378,7 +2382,7 @@ main {
   position: absolute;
   cursor: pointer;
   top: 22px;
-  width: 30px;
+  width: 50px;
   height: 100%;
 }
 
@@ -2390,13 +2394,11 @@ main {
 }
 
 .reviews__slider-button--prev {
-  background-position: left;
-  left: -50px;
+  left: -73px;
 }
 
 .reviews__slider-button--next {
-  background-position: right;
-  right: -50px;
+  right: -73px;
 }
 
 .reviews__slider-button--next::after {
@@ -2423,9 +2425,9 @@ main {
 .bottom h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 3px;
-  margin: 0 0 57px;
+  line-height: 41px;
+  letter-spacing: 1.6px;
+  margin: 0 0 50px;
 }
 
 .bottom::before {
@@ -2447,7 +2449,7 @@ main {
 
 .registration {
   color: #ffffff;
-  padding: 70px 170px 70px 0;
+  padding: 70px 170px 64px 0;
 }
 
 .registration div {
@@ -2457,7 +2459,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   width: 100%;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 .registration input {
@@ -2471,6 +2473,7 @@ main {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #74819c;
+  padding: 3px 0 4px;
 }
 
 .registration input::-webkit-input-placeholder {
@@ -2513,13 +2516,14 @@ main {
   font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  padding: 18px;
+  letter-spacing: 0.7px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   border: 3px solid #ffffff;
   background-color: transparent;
   cursor: pointer;
+  padding: 18px 18px 16px;
 }
 
 .registration button:hover,
@@ -2544,7 +2548,7 @@ main {
 
 .contacts {
   color: #102654;
-  padding: 70px 0 70px 120px;
+  padding: 70px 0 64px 120px;
 }
 
 .contacts div {
@@ -2561,6 +2565,7 @@ main {
 
 .contacts ul:first-child {
   margin-right: 60px;
+  padding-left: 4px;
 }
 
 .contacts ul:last-child {
@@ -2569,14 +2574,14 @@ main {
 }
 
 .contacts li:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .contacts h3 {
   font-family: "Roboto Condensed Bold", "Arial Bold", sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  margin: 0 0 10px;
+  line-height: 20px;
+  margin: 0 0 5px;
 }
 
 .contacts address,
@@ -2616,13 +2621,12 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 39px;
-  padding-bottom: 39px;
+  padding-top: 29px;
+  padding-bottom: 27px;
 }
 
 .footer__wrapper ul {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -2639,10 +2643,15 @@ main {
   opacity: 0.3;
 }
 
+.footer__logo {
+  margin-right: 8px;
+}
+
 .footer__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
 }
 
 .footer__navigation li:first-child {
@@ -2661,6 +2670,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 -3px 0;
 }
 
 .footer__social a {

@@ -6,9 +6,9 @@
     font-family: $ff-bebas;
     font-size: 49px;
     color: $main-blue;
-    letter-spacing: 1px;
+    letter-spacing: 2.2px;
     line-height: 49px;
-    margin: 0 0 60px;
+    margin: 0 0 55px;
   }
 }
 
@@ -87,7 +87,7 @@
     font-size: 18px;
     line-height: 27px;
     color: $white;
-    bottom: 5px;
+    bottom: 6px;
     width: 100%;
     text-align: center;
     padding: 15px;
@@ -103,7 +103,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 65px 20px 55px;
+    padding: 75px 20px 55px;
     background-color: rgba(16, 38, 84, 0.89);
     z-index: 1;
 
@@ -113,14 +113,14 @@
       font-family: $ff-regular;
       font-size: 16px;
       line-height: 24px;
-      margin: 0 0 20px;
+      margin: 0 0 33px;
     }
 
     ul {
       height: 120px;
       width: 100%;
       margin: 0;
-      padding: 0 10px 0 30px;
+      padding: 0 10px 0 50px;
       overflow-y: auto;
       scrollbar-width: none;
 
@@ -134,7 +134,7 @@
         line-height: 21px;
 
         &:not(:last-child) {
-          margin-bottom: 20px;
+          margin-bottom: 13px;
         }
       }
     }
@@ -147,7 +147,7 @@
     }
 
     h3 {
-      top: 25px;
+      top: 38px;
     }
   }
 }

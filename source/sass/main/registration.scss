@@ -1,13 +1,13 @@
 .registration {
   color: $white;
-  padding: 70px 170px 70px 0;
+  padding: 70px 170px 64px 0;
 
   div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     width: 100%;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 
   input {
@@ -21,6 +21,7 @@
     border-left: none;
     border-right: none;
     border-bottom: 1px solid #74819c;
+    padding: 3px 0 4px;
 
     &::placeholder {
       font-family: $ff-regular;
@@ -35,13 +36,14 @@
     font-family: $ff-bold;
     font-size: 14px;
     line-height: 16px;
-    padding: 18px;
+    letter-spacing: 0.7px;
     text-align: center;
     color: $white;
     text-transform: uppercase;
     border: 3px solid $white;
     background-color: transparent;
     cursor: pointer;
+    padding: 18px 18px 16px;
 
     &:hover,
     &:focus {
