@@ -114,22 +114,30 @@
 
 @include vp-768 {
   .reviews {
-    padding-top: 70px;
+    padding-top: 0;
     padding-bottom: 70px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 1.2px;
+      margin-bottom: 45px;
+    }
   }
 
   .reviews__wrapper {
-    width: calc(80% + 3px);
+    width: calc(80% - 6px);
   }
 
   .reviews__slide {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 20px 15px;
-    padding: 40px 25px;
+    gap: 16px 15px;
+    padding: 40px 25px 35px;
     text-align: center;
 
     h3 {
+      line-height: 26px;
       text-align: left;
       margin: auto 0;
     }
@@ -149,12 +157,18 @@
   }
 
   .reviews__slider-button {
+    width: 30px;
+
+    &::after {
+      background-size: 12px;
+    }
+
     &--prev {
-      left: -35px;
+      left: -41px;
     }
 
     &--next {
-      right: -35px;
+      right: -41px;
     }
   }
 }

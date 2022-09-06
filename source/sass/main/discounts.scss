@@ -183,8 +183,15 @@
 
 @include vp-768 {
   .discounts {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 67px;
+    padding-bottom: 67px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 1.2px;
+      margin-bottom: 45px;
+    }
 
     a {
       margin: 0 auto;
@@ -204,6 +211,11 @@
 
   .discount__unlimited-info {
     min-height: 299px;
+    padding: 44px 40px 45px 41px;
+
+    span {
+      margin-bottom: 16px;
+    }
   }
 
   .discount__unlimited-image {
@@ -212,5 +224,10 @@
     img {
       transform: none;
     }
+  }
+
+  .discount__block {
+    min-height: 211px;
+    padding: 34px 28px 39px;
   }
 }

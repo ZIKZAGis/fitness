@@ -2858,6 +2858,8 @@ main {
 
   .promo__wrapper {
     padding: 99px 0;
+    max-width: 940px;
+    margin: 0 auto;
   }
 
   .promo__image {
@@ -3431,6 +3433,17 @@ main {
     min-height: 292px;
   }
 
+  .coaches {
+    padding-top: 23px;
+    padding-bottom: 67px;
+  }
+
+  .coaches h2 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+  }
+
   .coaches__slider-wrapper {
     padding: 0 32px;
   }
@@ -3439,17 +3452,40 @@ main {
     height: 274px;
   }
 
+  .coaches__slider-button {
+    width: 30px;
+  }
+
   .coaches__slider-button--prev {
-    left: 0;
+    left: -10px;
   }
 
   .coaches__slider-button--next {
-    right: 0;
+    right: -10px;
+  }
+
+  .coaches__slider-button::after {
+    background-size: 12px;
+  }
+
+  .coaches__slide:hover h3 {
+    top: 26px;
+  }
+
+  .coaches__slide:hover .coaches__info {
+    padding: 64px 0 30px;
   }
 
   .advantages {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 64px;
+  }
+
+  .advantages h2 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+    margin-bottom: 49px;
   }
 
   .advantages__wrapper {
@@ -3460,6 +3496,7 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 0;
     padding: 0;
   }
 
@@ -3476,7 +3513,15 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 50px 45px;
+    padding: 0 46px;
+  }
+
+  .advantages__block:not(:last-child) {
+    margin-bottom: 39px;
+  }
+
+  .advantages__block div:first-child {
+    margin-bottom: 10px;
   }
 
   .advantages__block div:first-child span:first-child {
@@ -3485,12 +3530,29 @@ main {
 
   .advantages__center {
     width: 100%;
-    padding: 50px 74px;
+    margin-top: 5px;
+    margin-bottom: 45px;
+    padding: 50px 74px 43px;
+  }
+
+  .advantages__center span {
+    margin-bottom: 6px;
+  }
+
+  .advantages__center h3 {
+    margin-bottom: 9px;
   }
 
   .discounts {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 67px;
+    padding-bottom: 67px;
+  }
+
+  .discounts h2 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+    margin-bottom: 45px;
   }
 
   .discounts a {
@@ -3520,6 +3582,11 @@ main {
 
   .discount__unlimited-info {
     min-height: 299px;
+    padding: 44px 40px 45px 41px;
+  }
+
+  .discount__unlimited-info span {
+    margin-bottom: 16px;
   }
 
   .discount__unlimited-image {
@@ -3532,13 +3599,25 @@ main {
     transform: none;
   }
 
+  .discount__block {
+    min-height: 211px;
+    padding: 34px 28px 39px;
+  }
+
   .reviews {
-    padding-top: 70px;
+    padding-top: 0;
     padding-bottom: 70px;
   }
 
+  .reviews h2 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+    margin-bottom: 45px;
+  }
+
   .reviews__wrapper {
-    width: calc(80% + 3px);
+    width: calc(80% - 6px);
   }
 
   .reviews__slide {
@@ -3546,12 +3625,13 @@ main {
     grid-template-columns: auto auto;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
-    gap: 20px 15px;
-    padding: 40px 25px;
+    gap: 16px 15px;
+    padding: 40px 25px 35px;
     text-align: center;
   }
 
   .reviews__slide h3 {
+    line-height: 26px;
     text-align: left;
     margin: auto 0;
   }
@@ -3573,12 +3653,20 @@ main {
     margin-left: auto;
   }
 
+  .reviews__slider-button {
+    width: 30px;
+  }
+
+  .reviews__slider-button::after {
+    background-size: 12px;
+  }
+
   .reviews__slider-button--prev {
-    left: -35px;
+    left: -41px;
   }
 
   .reviews__slider-button--next {
-    right: -35px;
+    right: -41px;
   }
 
   .bottom__wrapper {

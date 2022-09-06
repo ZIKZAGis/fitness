@@ -133,6 +133,8 @@
 @include vp-1200 {
   .promo__wrapper {
     padding: 99px 0;
+    max-width: 940px;
+    margin: 0 auto;
   }
 
   .promo__image {

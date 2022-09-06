@@ -197,12 +197,20 @@
 @include vp-768 {
   .advantages {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 64px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 1.2px;
+      margin-bottom: 49px;
+    }
   }
 
   .advantages__wrapper {
     display: flex;
     flex-direction: column;
+    gap: 0;
     padding: 0;
   }
 
@@ -212,9 +220,15 @@
     text-align: center;
     width: 100%;
     align-items: center;
-    padding: 50px 45px;
+    padding: 0 46px;
+
+    &:not(:last-child) {
+      margin-bottom: 39px;
+    }
 
     div:first-child {
+      margin-bottom: 10px;
+
       span:first-child {
         margin: 0;
       }
@@ -223,6 +237,16 @@
 
   .advantages__center {
     width: 100%;
-    padding: 50px 74px;
+    margin-top: 5px;
+    margin-bottom: 45px;
+    padding: 50px 74px 43px;
+
+    span {
+      margin-bottom: 6px;
+    }
+
+    h3 {
+      margin-bottom: 9px;
+    }
   }
 }

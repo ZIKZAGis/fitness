@@ -191,6 +191,17 @@
 }
 
 @include vp-768 {
+  .coaches {
+    padding-top: 23px;
+    padding-bottom: 67px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 1.2px;
+    }
+  }
+
   .coaches__slider-wrapper {
     padding: 0 32px;
   }
@@ -200,12 +211,28 @@
   }
 
   .coaches__slider-button {
+    width: 30px;
+
     &--prev {
-      left: 0;
+      left: -10px;
     }
 
     &--next {
-      right: 0;
+      right: -10px;
+    }
+
+    &::after {
+      background-size: 12px;
+    }
+  }
+
+  .coaches__slide:hover {
+    h3 {
+      top: 26px;
+    }
+
+    .coaches__info {
+      padding: 64px 0 30px;
     }
   }
 }
