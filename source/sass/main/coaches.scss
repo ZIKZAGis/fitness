@@ -148,14 +148,21 @@
 
     h3 {
       top: 38px;
+      bottom: initial;
     }
   }
 }
 
 @include vp-1200 {
   .coaches {
+    padding-bottom: 100px;
+
     h2 {
       text-align: center;
+      font-size: 42px;
+      line-height: 38px;
+      letter-spacing: 2px;
+      margin-bottom: 45px;
     }
   }
 
@@ -164,6 +171,8 @@
   }
 
   .coaches__slider-button {
+    width: 50px;
+
     &::after {
       content: "";
       background: no-repeat center url("../img/arrow.svg");

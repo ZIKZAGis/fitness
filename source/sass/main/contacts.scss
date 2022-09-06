@@ -59,14 +59,34 @@
 
 @include vp-1200 {
   .contacts {
-    padding: 70px 179px 70px 133px;
+    padding: 67px 179px 63px 133px;
 
     ul {
-      width: 50%;
-
       &:first-child {
-        margin-right: 0;
+        margin-right: 49px;
+        padding: 0;
       }
+
+      &:last-child {
+        padding-left: 46px;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+
+    address,
+    p,
+    a {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 28px;
     }
   }
 }

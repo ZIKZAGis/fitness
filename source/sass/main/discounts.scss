@@ -30,6 +30,15 @@
     border-bottom: 1px solid;
     padding: 2px 0;
     letter-spacing: 0.5px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -122,16 +131,23 @@
 
 @include vp-1200 {
   .discounts {
-    padding-top: 100px;
+    padding-top: 97px;
     padding-bottom: 100px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 43px;
+    }
   }
 
   .discounts__wrapper {
     grid-template-rows: auto auto;
+    gap: 30px;
   }
 
   .discount__unlimited {
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 41% 59%;
     min-height: 462px;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -139,16 +155,29 @@
     grid-column-end: -1;
   }
 
+  .discount__unlimited-info {
+    padding: 45px 40px 45px 45px;
+  }
+
   .discount__unlimited-image {
     max-height: 462px;
-
-    img {
-      transform: scale(1.2) translate(34px, -39px);
-    }
   }
 
   .discount__block {
     min-height: 210px;
+    padding: 23px 28px 27px;
+
+    h3 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      line-height: 22px;
+    }
+
+    a {
+      padding-bottom: 0;
+    }
   }
 }
 
