@@ -81,11 +81,13 @@
 
 @include vp-768 {
   .registration {
-    padding: 70px 15px;
+    padding: 67px 15px 68px;
 
     div {
       display: flex;
       flex-direction: column;
+      gap: 33px;
+      margin-bottom: 37px;
     }
   }
 }

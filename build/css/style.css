@@ -1098,6 +1098,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -3669,12 +3670,19 @@ main {
     right: -41px;
   }
 
+  .bottom h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 39px;
+    letter-spacing: 1.1px;
+  }
+
   .bottom__wrapper {
     padding: 0;
   }
 
   .registration {
-    padding: 70px 15px;
+    padding: 67px 15px 68px;
   }
 
   .registration div {
@@ -3685,10 +3693,12 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 33px;
+    margin-bottom: 37px;
   }
 
   .contacts {
-    padding: 70px 15px;
+    padding: 67px 15px 37px;
   }
 
   .contacts div {
@@ -3702,11 +3712,12 @@ main {
   }
 
   .contacts li:not(:last-child) {
-    margin-bottom: 30;
+    margin-bottom: 26px;
+    margin-right: 0;
   }
 
   .contacts ul:last-child {
-    margin: 0;
+    margin: -5px 0 0;
     padding: 0;
     border: none;
   }
@@ -3719,8 +3730,13 @@ main {
     width: 100%;
   }
 
+  .contacts h3 {
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
   .footer__wrapper {
-    padding-top: 39px;
+    padding-top: 51px;
     padding-bottom: 39px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3741,15 +3757,17 @@ main {
     flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    height: 110px;
+    height: 124px;
   }
 
   .footer__navigation a {
-    padding: 0 15px 20px 0;
+    font-size: 16px;
+    padding: 0 15px 24px 0;
   }
 
   .footer__navigation li:first-child {
     display: block;
+    margin-right: 40px;
   }
 
   .footer__navigation li:first-child img {

@@ -85,7 +85,7 @@
 
 @include vp-768 {
   .footer__wrapper {
-    padding-top: 39px;
+    padding-top: 51px;
     padding-bottom: 39px;
     flex-direction: column;
     text-align: left;
@@ -99,14 +99,16 @@
   .footer__navigation {
     flex-direction: column;
     flex-wrap: wrap;
-    height: 110px;
+    height: 124px;
 
     a {
-      padding: 0 15px 20px 0;
+      font-size: 16px;
+      padding: 0 15px 24px 0;
     }
 
     li:first-child {
       display: block;
+      margin-right: 40px;
 
       img {
         width: 68px;
