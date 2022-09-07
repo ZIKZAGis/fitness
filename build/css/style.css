@@ -1497,19 +1497,18 @@ main {
   height: 228px;
 }
 
-.gym__video::before {
-  content: "";
+.gym__video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.gym__video-rpeview {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background: no-repeat center/cover url("../img/video_preview.jpg");
-}
-
-.gym__video iframe {
-  width: 100%;
-  height: 100%;
 }
 
 .gym__video-button {
@@ -3379,15 +3378,15 @@ main {
     padding-bottom: 50%;
   }
 
-  .gym__video::before {
-    z-index: 2;
-  }
-
   .gym__video iframe {
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
+  }
+
+  .gym__video-rpeview {
+    z-index: 2;
   }
 
   .gym__video-button {
