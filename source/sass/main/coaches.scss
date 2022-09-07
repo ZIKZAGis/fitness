@@ -17,7 +17,7 @@
 }
 
 .coaches__slider {
-  height: 294px;
+  height: 100%;
   width: 100%;
 }
 
@@ -26,8 +26,6 @@
   align-items: center;
 
   div {
-    height: 100%;
-
     img {
       position: relative;
       display: block;
@@ -166,6 +164,15 @@
     }
   }
 
+  .coaches__slide {
+    margin-bottom: -10px;
+
+    h3 {
+      bottom: 17px;
+      left: 3px;
+    }
+  }
+
   .coaches__slider-wrapper {
     padding: 0 55px;
   }
@@ -202,12 +209,27 @@
     }
   }
 
-  .coaches__slider-wrapper {
-    padding: 0 32px;
+  .coaches__slide {
+    margin-bottom: 0;
+    min-height: 274px;
+
+    h3 {
+      bottom: 0;
+      left: 0;
+    }
   }
 
-  .coaches__slider {
-    height: 274px;
+  .coaches__slider-line {
+    div {
+      img {
+        max-width: none;
+        width: 107%;
+      }
+    }
+  }
+
+  .coaches__slider-wrapper {
+    padding: 0 32px;
   }
 
   .coaches__slider-button {

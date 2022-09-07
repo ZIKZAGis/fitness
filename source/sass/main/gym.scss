@@ -1,4 +1,4 @@
-.main__gym {
+.gym {
   display: grid;
   grid-template-columns: 415px 2fr;
   gap: 22px;
@@ -60,14 +60,44 @@
   width: 364px;
   height: 228px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: no-repeat center / cover url("../img/video_preview.jpg");
+  }
+
   iframe {
     width: 100%;
     height: 100%;
   }
 }
 
+.gym__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: no-repeat center / contain url("../img/play_icon.svg") transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @include vp-1200 {
-  .main__gym {
+  .gym {
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -112,10 +142,15 @@
     width: 266px;
     height: 167px;
   }
+
+  .gym__video-button {
+    width: 73px;
+    height: 73px;
+  }
 }
 
 @include vp-768 {
-  .main__gym {
+  .gym {
     padding: 68px 0;
     text-align: left;
   }
@@ -152,10 +187,19 @@
     min-height: 167px;
     padding-bottom: 50%;
 
+    &::before {
+      z-index: 2;
+    }
+
     iframe {
       position: absolute;
       left: 0;
       top: 0;
+      z-index: 1;
     }
+  }
+
+  .gym__video-button {
+    z-index: 3;
   }
 }

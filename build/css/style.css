@@ -1431,7 +1431,7 @@ main {
   opacity: 0.6;
 }
 
-.main__gym {
+.gym {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 415px 2fr;
@@ -1497,9 +1497,41 @@ main {
   height: 228px;
 }
 
+.gym__video::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: no-repeat center/cover url("../img/video_preview.jpg");
+}
+
 .gym__video iframe {
   width: 100%;
   height: 100%;
+}
+
+.gym__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: no-repeat center/contain url("../img/play_icon.svg") transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.gym__video-button:hover {
+  opacity: 0.6;
+}
+
+.gym__video-button:active {
+  opacity: 0.3;
 }
 
 .subscript {
@@ -1874,7 +1906,7 @@ main {
 }
 
 .coaches__slider {
-  height: 294px;
+  height: 100%;
   width: 100%;
 }
 
@@ -1885,10 +1917,6 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.coaches__slider-line div {
-  height: 100%;
 }
 
 .coaches__slider-line div img {
@@ -2771,7 +2799,7 @@ main {
     display: none;
   }
 
-  .main__gym {
+  .gym {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2820,6 +2848,11 @@ main {
     top: 261px;
     width: 266px;
     height: 167px;
+  }
+
+  .gym__video-button {
+    width: 73px;
+    height: 73px;
   }
 
   .subscript {
@@ -2952,6 +2985,15 @@ main {
     line-height: 38px;
     letter-spacing: 2px;
     margin-bottom: 45px;
+  }
+
+  .coaches__slide {
+    margin-bottom: -10px;
+  }
+
+  .coaches__slide h3 {
+    bottom: 17px;
+    left: 3px;
   }
 
   .coaches__slider-wrapper {
@@ -3299,7 +3341,7 @@ main {
     display: none;
   }
 
-  .main__gym {
+  .gym {
     padding: 68px 0;
     text-align: left;
   }
@@ -3337,10 +3379,19 @@ main {
     padding-bottom: 50%;
   }
 
+  .gym__video::before {
+    z-index: 2;
+  }
+
   .gym__video iframe {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
+  }
+
+  .gym__video-button {
+    z-index: 3;
   }
 
   .subscript {
@@ -3445,12 +3496,23 @@ main {
     letter-spacing: 1.2px;
   }
 
-  .coaches__slider-wrapper {
-    padding: 0 32px;
+  .coaches__slide {
+    margin-bottom: 0;
+    min-height: 274px;
   }
 
-  .coaches__slider {
-    height: 274px;
+  .coaches__slide h3 {
+    bottom: 0;
+    left: 0;
+  }
+
+  .coaches__slider-line div img {
+    max-width: none;
+    width: 107%;
+  }
+
+  .coaches__slider-wrapper {
+    padding: 0 32px;
   }
 
   .coaches__slider-button {
@@ -3698,7 +3760,7 @@ main {
   }
 
   .contacts {
-    padding: 67px 15px 37px;
+    padding: 67px 15px 35px;
   }
 
   .contacts div {
