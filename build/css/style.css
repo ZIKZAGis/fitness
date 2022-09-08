@@ -1102,8 +1102,9 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  overflow: hidden;
 }
 
 a {
@@ -1555,6 +1556,21 @@ main {
 .subscript__tabs {
   position: relative;
   z-index: 1;
+}
+
+.subscript__tabs::after {
+  content: "";
+  position: absolute;
+  bottom: -214px;
+  right: -108px;
+  width: 321px;
+  height: 384px;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+  background: no-repeat url("../img/weight_plates.png") transparent;
+  background-size: contain;
+  z-index: 0;
 }
 
 .subscript__nav {
@@ -2870,6 +2886,13 @@ main {
     margin-bottom: 44px;
   }
 
+  .subscript__tabs::after {
+    width: 289px;
+    height: 345px;
+    right: -10px;
+    bottom: -175px;
+  }
+
   .subscript__tab {
     font-size: 18px;
   }
@@ -3411,6 +3434,10 @@ main {
     justify-content: space-between;
     gap: 0;
     margin-bottom: 34px;
+  }
+
+  .subscript__tabs::after {
+    display: none;
   }
 
   .subscript__tab {
