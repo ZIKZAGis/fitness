@@ -50,7 +50,7 @@
   color: $main-blue;
 }
 
-.discount__unlimited {
+.discounts__unlimited {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
@@ -60,7 +60,7 @@
   color: $white;
 }
 
-.discount__unlimited-info {
+.discounts__unlimited-info {
   display: flex;
   flex-direction: column;
   background-color: $coral;
@@ -92,7 +92,7 @@
   }
 }
 
-.discount__unlimited-image {
+.discounts__unlimited-image {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -104,7 +104,7 @@
   }
 }
 
-.discount__block {
+.discounts__block {
   display: flex;
   flex-direction: column;
   min-height: 211px;
@@ -146,7 +146,7 @@
     gap: 30px;
   }
 
-  .discount__unlimited {
+  .discounts__unlimited {
     grid-template-columns: 41% 59%;
     min-height: 462px;
     grid-row-start: 1;
@@ -155,15 +155,15 @@
     grid-column-end: -1;
   }
 
-  .discount__unlimited-info {
+  .discounts__unlimited-info {
     padding: 45px 40px 45px 45px;
   }
 
-  .discount__unlimited-image {
+  .discounts__unlimited-image {
     max-height: 462px;
   }
 
-  .discount__block {
+  .discounts__block {
     min-height: 210px;
     padding: 23px 28px 27px;
 
@@ -204,12 +204,12 @@
     text-align: center;
   }
 
-  .discount__unlimited {
+  .discounts__unlimited {
     display: flex;
     flex-direction: column;
   }
 
-  .discount__unlimited-info {
+  .discounts__unlimited-info {
     min-height: 299px;
     padding: 44px 40px 45px 41px;
 
@@ -218,7 +218,7 @@
     }
   }
 
-  .discount__unlimited-image {
+  .discounts__unlimited-image {
     height: 299px;
 
     img {
@@ -226,7 +226,7 @@
     }
   }
 
-  .discount__block {
+  .discounts__block {
     min-height: 211px;
     padding: 34px 28px 39px;
   }

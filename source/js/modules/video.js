@@ -18,8 +18,8 @@ document.getElementById('to-play').addEventListener('click', function () {
       'onReady': onPlayerReady,
     },
   });
-  document.querySelector('.gym__video-button').style.display = 'none';
-  document.querySelector('.gym__video-rpeview').style.display = 'none';
+  document.querySelector('.gym__video-button').classList.add('video-plays');
+  document.querySelector('.gym__video-rpeview').classList.add('video-plays');
 });
 
 function onPlayerReady(event) {
