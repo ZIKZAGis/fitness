@@ -28,7 +28,7 @@
     font-family: $ff-bold;
     text-transform: uppercase;
     border-bottom: 1px solid;
-    padding: 2px 0;
+    padding: 15px 0 2px;
     letter-spacing: 0.5px;
 
     &:hover,
@@ -148,7 +148,6 @@
 
   .discounts__unlimited {
     grid-template-columns: 41% 59%;
-    min-height: 462px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -160,7 +159,14 @@
   }
 
   .discounts__unlimited-image {
-    max-height: 462px;
+    position: relative;
+    padding-bottom: calc(115% + 1px);
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   .discounts__block {
@@ -219,7 +225,7 @@
   }
 
   .discounts__unlimited-image {
-    height: 299px;
+    padding-bottom: 103%;
 
     img {
       transform: none;

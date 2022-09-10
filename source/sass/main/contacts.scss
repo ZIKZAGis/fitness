@@ -44,6 +44,7 @@
   }
 
   a {
+    display: block;
     color: $main-blue;
 
     &:hover,
@@ -59,7 +60,7 @@
 
 @include vp-1200 {
   .contacts {
-    padding: 67px 179px 63px 133px;
+    padding: 67px 179px 66px 133px;
 
     ul {
       &:first-child {
@@ -93,7 +94,7 @@
 
 @include vp-768 {
   .contacts {
-    padding: 67px 15px 35px;
+    padding: 67px 15px 38px;
 
     div {
       display: flex;
