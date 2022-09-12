@@ -5,14 +5,14 @@
   color: $main-blue;
 
   h2 {
-    font-family: $ff-bebas;
+    font-family: $ff-bebas-bold;
     font-size: 49px;
-    line-height: 49px;
-    letter-spacing: 1.7px;
+    line-height: 56px;
+    letter-spacing: 1.5px;
     text-align: center;
     width: fit-content;
     max-width: 550px;
-    margin: 0 auto 73px;
+    margin: 0 auto 65px;
   }
 }
 
@@ -89,6 +89,10 @@
     grid-area: e;
     align-items: end;
     padding-right: 5px;
+
+    div:first-child span:first-child {
+      margin: 0 33px 1px 0;
+    }
   }
 }
 
@@ -129,8 +133,9 @@
 
     h2 {
       font-size: 42px;
-      line-height: 42px;
-      margin-bottom: 50px;
+      line-height: 47px;
+      letter-spacing: 1.3px;
+      margin-bottom: 45px;
     }
   }
 
@@ -201,9 +206,9 @@
 
     h2 {
       font-size: 32px;
-      line-height: 32px;
-      letter-spacing: 1.2px;
-      margin-bottom: 49px;
+      line-height: 36px;
+      letter-spacing: 1px;
+      margin-bottom: 46px;
     }
   }
 

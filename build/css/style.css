@@ -1074,9 +1074,17 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-display: swap;
   src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../fonts/BebasNeue-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "BNB";
+  font-display: swap;
+  src: url("../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../fonts/BebasNeue-Bold.woff") format("woff");
 }
 
 *,
@@ -1294,7 +1302,7 @@ main {
 
 .header__list a {
   display: block;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 26px;
   line-height: 20px;
   letter-spacing: 1.1px;
@@ -1334,22 +1342,22 @@ main {
 }
 
 .header__main-info p {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 1.7px;
-  margin: 0 0 8px;
+  margin: 0 0 13px;
 }
 
 .header__main-info h1 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BNB", "Arial Bold", sans-serif;
   text-transform: uppercase;
   font-size: 109px;
   line-height: 109px;
-  letter-spacing: 4px;
+  letter-spacing: 3.2px;
   text-align: right;
-  margin: 0 0 60px;
+  margin: 0 0 56px;
   max-width: 298px;
   -webkit-text-stroke: 3px;
 }
@@ -1372,7 +1380,7 @@ main {
   color: #ffffff;
   border: 4px solid #ffffff;
   text-align: center;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   font-size: 12px;
   min-width: 233px;
   line-height: 14px;
@@ -1457,12 +1465,12 @@ main {
 }
 
 .gym__info h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BNB", "Arial Bold", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 1.7px;
-  margin-bottom: 11px;
-  margin-top: 44px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  margin-top: 47px;
 }
 
 .gym__info span {
@@ -1501,7 +1509,7 @@ main {
 .gym__video {
   position: absolute;
   left: 0;
-  top: 288px;
+  bottom: -20px;
   width: 364px;
   height: 228px;
 }
@@ -1553,12 +1561,12 @@ main {
 .subscript h2 {
   display: block;
   max-width: 1100px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BNB", "Arial Bold", sans-serif;
   font-size: 49px;
-  line-height: 49px;
+  line-height: 55px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin: 0 auto 29px;
-  letter-spacing: 2px;
+  margin: 0 auto 23px;
 }
 
 .subscript__tabs {
@@ -1781,7 +1789,7 @@ main {
   flex-direction: column;
   color: #ffffff;
   background-color: #ed0233;
-  padding: 79px 79px 86px;
+  padding: 82px 79px 86px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1791,12 +1799,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .promo__top h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  letter-spacing: 3px;
+  font-family: "BNB", "Arial Bold", sans-serif;
+  letter-spacing: 2.5px;
   font-size: 90px;
   line-height: 90px;
   width: -webkit-min-content;
@@ -1806,7 +1814,7 @@ main {
 }
 
 .promo__info {
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .promo__info h3 {
@@ -1826,7 +1834,7 @@ main {
 .promo__info p {
   font-family: "Roboto Condensed Regular", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 18px;
   margin: 0;
 }
 
@@ -1916,12 +1924,12 @@ main {
 }
 
 .coaches h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BNB", "Arial Bold", sans-serif;
   font-size: 49px;
   color: #102654;
-  letter-spacing: 2.2px;
-  line-height: 49px;
-  margin: 0 0 55px;
+  letter-spacing: 1.7px;
+  line-height: 55px;
+  margin: 0 0 49px;
 }
 
 .coaches__slider-wrapper {
@@ -1969,12 +1977,12 @@ main {
 
 .coaches__slider-button--prev {
   background-position: left;
-  left: -50px;
+  left: -63px;
 }
 
 .coaches__slider-button--next {
   background-position: right;
-  right: -50px;
+  right: -63px;
 }
 
 .coaches__slider-button--next::after {
@@ -2075,16 +2083,16 @@ main {
 }
 
 .advantages h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BNB", "Arial Bold", sans-serif;
   font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 1.7px;
+  line-height: 56px;
+  letter-spacing: 1.5px;
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 550px;
-  margin: 0 auto 73px;
+  margin: 0 auto 65px;
 }
 
 .advantages__wrapper {
@@ -2186,6 +2194,10 @@ main {
   padding-right: 5px;
 }
 
+.advantages__block--bottom-right div:first-child span:first-child {
+  margin: 0 33px 1px 0;
+}
+
 .advantages__center {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
@@ -2225,16 +2237,16 @@ main {
 }
 
 .discounts h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BNB", "Arial Bold", sans-serif;
   font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 1.7px;
+  line-height: 57px;
+  letter-spacing: 1.5px;
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 550px;
-  margin: 0 auto 55px;
+  margin: 0 auto 48px;
   color: #102654;
 }
 
@@ -2379,12 +2391,12 @@ main {
 }
 
 .reviews h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BNB", "Arial Bold", sans-serif;
   font-size: 49px;
   color: #102654;
   letter-spacing: 1.5px;
-  line-height: 39px;
-  margin: 0 0 60px;
+  line-height: 45px;
+  margin: 0 0 54px;
   text-align: center;
 }
 
@@ -2485,11 +2497,11 @@ main {
 }
 
 .bottom h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BNB", "Arial Bold", sans-serif;
   font-size: 49px;
-  line-height: 41px;
-  letter-spacing: 1.6px;
-  margin: 0 0 50px;
+  line-height: 46px;
+  letter-spacing: 1.5px;
+  margin: 0 0 45px;
 }
 
 .bottom::before {
@@ -2753,6 +2765,7 @@ main {
 
   .header {
     padding-bottom: 82px;
+    background: conic-gradient(from 56deg at 21% 40%, #b80027 10%, #003d85 34%, #b80027);
   }
 
   .header__links {
@@ -2791,14 +2804,14 @@ main {
     font-size: 34px;
     line-height: 34px;
     letter-spacing: 1px;
-    margin-bottom: 1px;
+    margin-bottom: 6px;
   }
 
   .header__main-info h1 {
     font-size: 86px;
     line-height: 86px;
-    margin-bottom: 45px;
-    letter-spacing: 3px;
+    margin-bottom: 40px;
+    letter-spacing: 2.6px;
     -webkit-text-stroke: 2px;
   }
 
@@ -2849,9 +2862,10 @@ main {
 
   .gym__info h2 {
     font-size: 42px;
-    line-height: 42px;
+    line-height: 45px;
+    letter-spacing: 1.3px;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .gym__info span {
@@ -2881,7 +2895,7 @@ main {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: 61%;
+    bottom: 0;
     width: 266px;
     height: 167px;
   }
@@ -2898,8 +2912,9 @@ main {
 
   .subscript h2 {
     font-size: 42px;
-    letter-spacing: 1.7px;
-    margin-bottom: 17px;
+    line-height: 54px;
+    letter-spacing: 1.3px;
+    margin-bottom: 12px;
   }
 
   .subscript__nav {
@@ -2941,18 +2956,18 @@ main {
 
   .promo__text {
     max-width: 292px;
-    padding: 45px;
+    padding: 49px 45px 45px;
   }
 
   .promo__text h2 {
     font-size: 52px;
     line-height: 52px;
-    letter-spacing: 2px;
-    margin-right: 28px;
+    letter-spacing: 1.5px;
+    margin-right: 30px;
   }
 
   .promo__text .promo__top {
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 
   .promo__text .promo__info h3 {
@@ -3021,9 +3036,9 @@ main {
   .coaches h2 {
     text-align: center;
     font-size: 42px;
-    line-height: 38px;
-    letter-spacing: 2px;
-    margin-bottom: 45px;
+    line-height: 42px;
+    letter-spacing: 1.3px;
+    margin-bottom: 41px;
   }
 
   .coaches__slide {
@@ -3065,8 +3080,9 @@ main {
 
   .advantages h2 {
     font-size: 42px;
-    line-height: 42px;
-    margin-bottom: 50px;
+    line-height: 47px;
+    letter-spacing: 1.3px;
+    margin-bottom: 45px;
   }
 
   .advantages__wrapper {
@@ -3161,8 +3177,9 @@ main {
 
   .discounts h2 {
     font-size: 42px;
-    line-height: 42px;
-    margin-bottom: 43px;
+    line-height: 46px;
+    letter-spacing: 1.3px;
+    margin-bottom: 39px;
   }
 
   .discounts__wrapper {
@@ -3222,8 +3239,9 @@ main {
 
   .reviews h2 {
     font-size: 42px;
-    line-height: 40px;
-    margin-bottom: 43px;
+    line-height: 44px;
+    letter-spacing: 1.3px;
+    margin-bottom: 40px;
   }
 
   .reviews__wrapper {
@@ -3244,8 +3262,8 @@ main {
 
   .bottom h2 {
     font-size: 42px;
-    letter-spacing: 1.5px;
-    margin-bottom: 39px;
+    letter-spacing: 1.3px;
+    margin-bottom: 34px;
   }
 
   .bottom__wrapper {
@@ -3338,7 +3356,7 @@ main {
   }
 
   .header {
-    background: conic-gradient(from 45deg at 35% 38%, #ed0233, #103aae, #ed0233);
+    background: conic-gradient(from 80deg at 37% 40%, #b80027 10%, #003d85 34%, #b80027);
     padding-bottom: 79px;
   }
 
@@ -3349,6 +3367,7 @@ main {
   .header__list a {
     font-size: 20px;
     line-height: 20px;
+    letter-spacing: 0.6px;
   }
 
   .header__list a img {
@@ -3371,14 +3390,15 @@ main {
     font-size: 28px;
     line-height: 28px;
     max-width: 290px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .header__main-info h1 {
     font-size: 78px;
     line-height: 78px;
+    letter-spacing: 2.4px;
     max-width: 290px;
-    margin-bottom: 46px;
+    margin-bottom: 42px;
   }
 
   .header__main-info ul {
@@ -3407,7 +3427,7 @@ main {
   .gym__info h2 {
     font-size: 32px;
     line-height: 32px;
-    letter-spacing: 1.1px;
+    letter-spacing: 1px;
     margin-bottom: 7px;
   }
 
@@ -3426,7 +3446,6 @@ main {
 
   .gym__video {
     position: relative;
-    top: 0;
     width: 100%;
     min-height: 167px;
     padding-bottom: 50%;
@@ -3454,8 +3473,9 @@ main {
 
   .subscript h2 {
     font-size: 32px;
-    letter-spacing: 1.3px;
-    margin-bottom: 2px;
+    line-height: 51px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
   }
 
   .subscript__nav {
@@ -3530,6 +3550,7 @@ main {
   }
 
   .promo__text {
+    padding: 48px 44px 45px;
     width: 100%;
     max-width: 100%;
   }
@@ -3549,8 +3570,8 @@ main {
 
   .coaches h2 {
     font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 1.2px;
+    line-height: 36px;
+    letter-spacing: 1px;
   }
 
   .coaches__slide {
@@ -3603,9 +3624,9 @@ main {
 
   .advantages h2 {
     font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 1.2px;
-    margin-bottom: 49px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 46px;
   }
 
   .advantages__wrapper {
@@ -3670,9 +3691,9 @@ main {
 
   .discounts h2 {
     font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 1.2px;
-    margin-bottom: 45px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 41px;
   }
 
   .discounts a {
@@ -3731,9 +3752,9 @@ main {
 
   .reviews h2 {
     font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 1.2px;
-    margin-bottom: 45px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 42px;
   }
 
   .reviews__wrapper {
@@ -3791,9 +3812,9 @@ main {
 
   .bottom h2 {
     font-size: 32px;
-    line-height: 32px;
-    margin-bottom: 39px;
-    letter-spacing: 1.1px;
+    line-height: 35px;
+    margin-bottom: 36px;
+    letter-spacing: 1px;
   }
 
   .bottom__wrapper {
