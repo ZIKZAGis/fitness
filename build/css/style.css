@@ -2284,8 +2284,8 @@ main {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
   gap: 40px 38px;
   color: #102654;
 }
@@ -2363,8 +2363,9 @@ main {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 211px;
+  height: auto;
   padding: 23px 30px 27px;
-  border: 7px solid transparent;
+  border: 7px solid;
   -o-border-image: -o-linear-gradient(bottom right, #103aae, #ed0233);
   border-image: -webkit-gradient(linear, right bottom, left top, from(#103aae), to(#ed0233));
   border-image: linear-gradient(to top left, #103aae, #ed0233);

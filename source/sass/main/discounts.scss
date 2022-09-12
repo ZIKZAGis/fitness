@@ -45,7 +45,7 @@
 .discounts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 40px 38px;
   color: $main-blue;
 }
@@ -108,8 +108,9 @@
   display: flex;
   flex-direction: column;
   min-height: 211px;
+  height: auto;
   padding: 23px 30px 27px;
-  border: 7px solid transparent;
+  border: 7px solid;
   border-image: $gradient;
   border-image-slice: 1;
 
